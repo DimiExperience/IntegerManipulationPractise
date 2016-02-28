@@ -11,8 +11,6 @@ namespace IntegerManipulationPractise
     {
         static void Main(string[] args)
         {
-            
-
             Console.WriteLine("How many lists?");
             int numOfLists = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("How many numbers per list?");
