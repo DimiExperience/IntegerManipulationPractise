@@ -37,7 +37,7 @@ namespace UnitTestProba
         {
             var actual = false;
             var random = new Random();
-            var numOfNumbers = random.Next(500);
+            var numOfNumbers = random.Next(100);
             var randomList = new List<int>();
             randomList.AddRange(IntegerUtils.GetRandomNumbers(numOfNumbers));
             if (randomList.Count == numOfNumbers)
