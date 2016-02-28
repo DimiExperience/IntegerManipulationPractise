@@ -35,9 +35,9 @@ namespace IntegerManipulationPractise
             return sortedNumbers;
         }
 
-        public static List<int> GetRandomNumbers()
+        public static List<int> GetRandomNumbers(int userCount)
         {
-            var count = 10;
+            var count = userCount;
             var random = new Random();
             var randomNumbers = new List<int>();
 
