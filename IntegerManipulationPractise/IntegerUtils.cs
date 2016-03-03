@@ -37,16 +37,13 @@ namespace IntegerManipulationPractise
 
         public static List<int> GetRandomNumbers(int userCount)
         {
-            var count = userCount;
             var random = new Random();
             var randomNumbers = new List<int>();
 
-            for (var i = 0; i < count; i++)
+            for (var i = 0; i < userCount; i++)
             {
                 int number;
-
                 do number = random.Next(100); while (randomNumbers.Contains(number));
-
                 randomNumbers.Add(number);
             }
 

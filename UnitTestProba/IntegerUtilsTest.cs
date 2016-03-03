@@ -12,21 +12,14 @@ namespace UnitTestProba
         public void ListSorter()
         {
             var actual = false;
-            var randomList = new List<int>();
             var random = new Random();
             var numberCount = random.Next(100);
-            randomList.AddRange(IntegerUtils.GetRandomNumbers(numberCount));
+            var randomList = new List<int>(IntegerUtils.GetRandomNumbers(numberCount));
             var sortedList = IntegerUtils.ListSorter(randomList);
             for (var i = 0; i < numberCount - 1; i++)
             {
-                if (sortedList[i] < sortedList[i + 1])
-                {
-                    actual = true;
-                }
-                else
-                {
-                    actual = false;
-                }
+                actual = sortedList[i] < sortedList[i + 1];
+                if (!actual) break;
             }
             Assert.IsTrue(actual, "Wrong sorting");
         }

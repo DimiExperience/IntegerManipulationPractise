@@ -18,7 +18,7 @@ namespace IntegerManipulationPractise
             var startTime = DateTime.UtcNow;
             for (var i = 0; i < numOfLists; i++)
             {
-                Thread.Sleep(10); //HAHA, btw, morao sam da mu stavim sleep da ne bi ponovio liste:) mnogo mi je brz komp:P
+                //Thread.Sleep(10); //HAHA, btw, morao sam da mu stavim sleep da ne bi ponovio liste:) mnogo mi je brz komp:P
 
                 var randomList = new List<int>();
                 randomList.AddRange(IntegerUtils.GetRandomNumbers(userCount));
