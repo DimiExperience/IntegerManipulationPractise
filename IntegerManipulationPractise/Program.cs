@@ -16,13 +16,19 @@ namespace IntegerManipulationPractise
             Console.WriteLine("How many numbers per list?");
             var userCount = Convert.ToInt32(Console.ReadLine());
             var startTime = DateTime.UtcNow;
+            var testList = new List<int>();
             for (var i = 0; i < numOfLists; i++)
             {
-                //Thread.Sleep(10); //HAHA, btw, morao sam da mu stavim sleep da ne bi ponovio liste:) mnogo mi je brz komp:P
 
                 var randomList = new List<int>();
                 randomList.AddRange(IntegerUtils.GetRandomNumbers(userCount));
-                    //ZASTO MORAM DA PISEM IntegerUtils, zasto ne moze samo GetRandomNumbers()???????
+                while (randomList.SequenceEqual(testList))  //dva puna dana sam se mucio oko ovoga dok nisam shvatio da .equals i == ne poredi liste clan po clan.........
+                {
+                    randomList.Clear();
+                    randomList.AddRange(IntegerUtils.GetRandomNumbers(userCount));
+                }
+                testList.Clear();
+                testList.AddRange(randomList);
 
                 Console.WriteLine("\nUnsorted list No.{0}: ", i+1);
                 foreach (var num in randomList)
@@ -32,7 +38,6 @@ namespace IntegerManipulationPractise
                 Console.WriteLine("\nSorted List No.{0}: ", i+1);
 
                 var sortedList = IntegerUtils.ListSorter(randomList);
-                    //ISTO PITANJE I OVDE, zasto ne moze bez IntegerUtils.?
 
                 foreach (var num in sortedList)
                 {
