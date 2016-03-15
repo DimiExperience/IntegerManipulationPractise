@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE18056C-618B-4508-8527-2D07FD1F5ECE}</ProjectGuid>
+    <ProjectGuid>{66699FF3-3709-4EB7-AE69-A59C6695B1CE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IntegerManipulationPractise</RootNamespace>
-    <AssemblyName>IntegerManipulationPractise</AssemblyName>
+    <RootNamespace>RandomShit</RootNamespace>
+    <AssemblyName>RandomShit</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IntegerUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shuffle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

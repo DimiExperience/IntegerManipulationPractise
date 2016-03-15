@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerManipulationPractise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProba", "UnitTestProba\UnitTestProba.csproj", "{B9A1EB7A-1E68-41DE-9332-68C6BC101A19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomShit", "RandomShit\RandomShit.csproj", "{66699FF3-3709-4EB7-AE69-A59C6695B1CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B9A1EB7A-1E68-41DE-9332-68C6BC101A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A1EB7A-1E68-41DE-9332-68C6BC101A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A1EB7A-1E68-41DE-9332-68C6BC101A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66699FF3-3709-4EB7-AE69-A59C6695B1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66699FF3-3709-4EB7-AE69-A59C6695B1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66699FF3-3709-4EB7-AE69-A59C6695B1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66699FF3-3709-4EB7-AE69-A59C6695B1CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
